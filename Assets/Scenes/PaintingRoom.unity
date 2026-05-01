@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 29454472}
   - component: {fileID: 29454471}
   - component: {fileID: 29454470}
+  - component: {fileID: 29454476}
   m_Layer: 0
   m_Name: ColourSphere_Red
   m_TagString: Untagged
@@ -408,6 +409,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29454476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29454469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b694bf64344714cae9455c8d4addbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 132359811}
+  color_name: red
 --- !u!1 &46980041
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +622,8 @@ GameObject:
   - component: {fileID: 132359810}
   - component: {fileID: 132359809}
   - component: {fileID: 132359808}
-  - component: {fileID: 132359807}
+  - component: {fileID: 132359812}
+  - component: {fileID: 132359811}
   m_Layer: 0
   m_Name: PaintingCanvas
   m_TagString: Canvas
@@ -615,27 +631,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &132359807
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132359806}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &132359808
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -701,6 +696,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132359811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132359806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5e26abe9022e84e987dd37c04f369b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brush_tip: {fileID: 860772495}
+  brush_size: 5
+  brush_color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!64 &132359812
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132359806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &183047213
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1024,7 @@ GameObject:
   - component: {fileID: 266735693}
   - component: {fileID: 266735692}
   - component: {fileID: 266735691}
+  - component: {fileID: 266735697}
   m_Layer: 0
   m_Name: ColourSphere_Black
   m_TagString: Untagged
@@ -1264,6 +1297,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &266735697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266735690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b694bf64344714cae9455c8d4addbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 132359811}
+  color_name: black
 --- !u!1 &438910682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +2475,7 @@ GameObject:
   - component: {fileID: 941402712}
   - component: {fileID: 941402711}
   - component: {fileID: 941402710}
+  - component: {fileID: 941402716}
   m_Layer: 0
   m_Name: ColourSphere_Blue
   m_TagString: Untagged
@@ -2700,6 +2748,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941402716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941402709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b694bf64344714cae9455c8d4addbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 132359811}
+  color_name: blue
 --- !u!1 &1046562921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3581,7 @@ GameObject:
   - component: {fileID: 1804635237}
   - component: {fileID: 1804635236}
   - component: {fileID: 1804635235}
+  - component: {fileID: 1804635241}
   m_Layer: 0
   m_Name: 'ColourSphere_Yellow '
   m_TagString: Untagged
@@ -3791,6 +3854,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804635241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804635234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b694bf64344714cae9455c8d4addbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 132359811}
+  color_name: yellow
 --- !u!1 &1840820203
 GameObject:
   m_ObjectHideFlags: 0
